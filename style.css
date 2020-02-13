@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700&display=swap');
+
+
+:root{
+    --feature: rgb(224, 87, 28);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(202, 205, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-card{
+    width: 300px;
+    background: white;
+    box-shadow: 0 1px 15px rgba(0,0,0,.15);
+    position: relative;
+    
+}
+
+.image{
+    background: url("news.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    
+}
+
+.date{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--feature);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+.tag{
+    height: 40px;
+    width: 100px;
+   
+    background-color: var(--feature);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    color: white;
+    font-weight: 700;
+  
+}
+
+.news-card__content{
+    padding: 1.5em 1.5em 0 1.5em;
+    line-height: 1.9;
+    
+}
+.news-card__content p{
+   
+    color: rgba(68, 68, 70, 0.603);
+}
+.news-card__content h4{
+   
+    color: rgba(42, 42, 43, 0.829);
+}
+
+.bottom{
+    display: flex;
+    padding: 2em;
+    
+    
+}
+
+.bottom p{
+    padding-right: 1em;
+    color: rgba(68, 68, 70, 0.678);
+} 
+
+.news-card__content h4{
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+
+.news-card__content h5{
+    font-size: 15px;
+    color: var(--feature);
+    font-weight: 300;
+   
+}
+
+.heading{
+    padding: 1em 1em 1em 0;
+}
